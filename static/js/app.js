@@ -1,5 +1,5 @@
-const url = "http://127.0.0.1:5000/api/north"
-const stations_url = "http://127.0.0.1:5000/api/stations"
+const url = "http://project-3-group-8.herokuapp.com/api/north"
+const stations_url = "http://project-3-group-8.herokuapp.com/api/stations"
 
 // d3.json(url).then(function (response) {
 //   console.log(response[0].north.date);
