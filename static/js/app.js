@@ -36,6 +36,9 @@ function init() {
         //   var station_id = demographicArr[0].station_id
         //   var station = demographicArr[0].station
 
+        station = "";
+        station_id = "";
+        
         for (var x = 0; x < data.length; x++) {
           if (data[x].station_id == input){
             station = data[x].station
@@ -350,7 +353,7 @@ function init() {
           maxTempArr.push(data[x].max_temperature)
         }
       }
-      maxTempArr.sort((a,b) => a - b)
+      // maxTempArr.sort((a,b) => a - b)
 
       var minTempArr = []
       for (var x = 0; x < data.length; x++) {
@@ -358,7 +361,7 @@ function init() {
           minTempArr.push(data[x].min_temperature)
         }
       }
-      minTempArr.sort((a,b) => a - b)
+      // minTempArr.sort((a,b) => a - b)
 
       // GRAB HUMIDITY
       var maxHumidityArr = []
@@ -367,7 +370,7 @@ function init() {
           maxHumidityArr.push(data[x].max_humidity)
         }
       }
-      maxHumidityArr.sort((a,b) => a - b)
+      // maxHumidityArr.sort((a,b) => a - b)
 
       var minHumidityArr = []
       for (var x = 0; x < data.length; x++) {
@@ -375,7 +378,7 @@ function init() {
           minHumidityArr.push(data[x].min_humidity)
         }
       }
-      minHumidityArr.sort((a,b) => a - b)
+      // minHumidityArr.sort((a,b) => a - b)
 
       // GRAB OTHER VALUES
       var x = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
