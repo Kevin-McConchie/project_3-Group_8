@@ -451,12 +451,13 @@ function dropMenu() {
       var ids = data[x].station_id
       arr.push(ids)
     }
-    // console.log(arr)
+    console.log(arr)
     var dropDown = ""
     for (var x = 0; x < arr.length; x++) {
       dropDown += '<option>' + arr[x] + '</option>'
     }
     document.getElementById("selDataset").innerHTML = dropDown;
+    console.log(dropDown)
   })
 };
 
