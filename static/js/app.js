@@ -303,7 +303,7 @@ function init() {
           type: "indicator",
           mode: "gauge+number",
           value: avgspeed,
-          title: { 'text': "Average Wind Speed" },
+          title: { 'text': "Average Wind Speed (m/s)" },
           gauge: {
             axis: {
               range: [null, 9],
